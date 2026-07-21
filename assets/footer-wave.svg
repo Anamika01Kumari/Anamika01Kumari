@@ -1,0 +1,37 @@
+<svg width="1200" height="140" viewBox="0 0 1200 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="45%" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="140" fill="#000000"/>
+
+  <path fill="url(#waveGrad2)" opacity="0.5">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+      M0,80 C 150,40 350,110 600,75 C 850,40 1050,110 1200,80 L1200,140 L0,140 Z;
+      M0,90 C 150,110 350,40 600,85 C 850,120 1050,50 1200,90 L1200,140 L0,140 Z;
+      M0,80 C 150,40 350,110 600,75 C 850,40 1050,110 1200,80 L1200,140 L0,140 Z
+      "/>
+  </path>
+
+  <path fill="url(#waveGrad)" opacity="0.85">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="
+      M0,100 C 200,70 400,130 600,100 C 800,70 1000,130 1200,100 L1200,140 L0,140 Z;
+      M0,110 C 200,130 400,70 600,110 C 800,140 1000,80 1200,110 L1200,140 L0,140 Z;
+      M0,100 C 200,70 400,130 600,100 C 800,70 1000,130 1200,100 L1200,140 L0,140 Z
+      "/>
+  </path>
+
+  <text x="600" y="45" font-family="JetBrains Mono, monospace" font-size="14" fill="#00E5FF" opacity="0.75" text-anchor="middle">
+    Designed &amp; built by Anamika Kumari
+  </text>
+</svg>
