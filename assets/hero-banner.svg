@@ -1,0 +1,114 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="55%" stop-color="#05050A"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+
+    <linearGradient id="curve" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <linearGradient id="curve2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowPurple" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+
+    <linearGradient id="glassFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.015"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"/>
+
+  <!-- ambient neon orbs -->
+  <circle cx="120" cy="90" r="110" fill="#00E5FF" opacity="0.16" filter="url(#glowCyan)">
+    <animate attributeName="opacity" values="0.10;0.24;0.10" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="300" r="140" fill="#7C3AED" opacity="0.18" filter="url(#glowPurple)">
+    <animate attributeName="opacity" values="0.12;0.26;0.12" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="980" cy="60" r="70" fill="#8B5CF6" opacity="0.14" filter="url(#glowPurple)">
+    <animate attributeName="opacity" values="0.08;0.20;0.08" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- premium curves -->
+  <path d="M -50 300 C 250 220, 550 380, 900 260 C 1050 210, 1150 260, 1250 220" stroke="url(#curve)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M -50 340 C 300 300, 600 400, 950 320 C 1080 290, 1180 320, 1260 300" stroke="url(#curve2)" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- fine grid dots -->
+  <g opacity="0.12">
+    <circle cx="60" cy="330" r="1.4" fill="#00E5FF"/>
+    <circle cx="90" cy="310" r="1.4" fill="#00E5FF"/>
+    <circle cx="120" cy="335" r="1.4" fill="#7C3AED"/>
+    <circle cx="1140" cy="70" r="1.4" fill="#00E5FF"/>
+    <circle cx="1110" cy="95" r="1.4" fill="#7C3AED"/>
+    <circle cx="1160" cy="110" r="1.4" fill="#00E5FF"/>
+  </g>
+
+  <!-- floating code brackets, right side -->
+  <g filter="url(#softGlow)" opacity="0.9">
+    <text x="965" y="150" font-family="JetBrains Mono, monospace" font-size="46" fill="#00E5FF" opacity="0.55">
+      &lt;/&gt;
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="1040" y="230" font-family="JetBrains Mono, monospace" font-size="30" fill="#8B5CF6" opacity="0.5">
+      { }
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 8; 0 0" dur="5s" repeatCount="indefinite"/>
+    </text>
+    <text x="900" y="255" font-family="JetBrains Mono, monospace" font-size="22" fill="#7C3AED" opacity="0.45">
+      ( )=&gt;
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="4.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- glass panel -->
+  <rect x="70" y="115" width="620" height="170" rx="18" fill="url(#glassFill)" stroke="#00E5FF" stroke-opacity="0.25" stroke-width="1"/>
+  <rect x="70" y="115" width="620" height="170" rx="18" fill="none" stroke="#7C3AED" stroke-opacity="0.18" stroke-width="1"/>
+
+  <!-- accent line -->
+  <rect x="94" y="150" width="52" height="4" rx="2" fill="#00E5FF"/>
+
+  <!-- name -->
+  <text x="94" y="205" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="url(#textGrad)">
+    Anamika Kumari
+  </text>
+
+  <!-- role -->
+  <text x="94" y="245" font-family="JetBrains Mono, monospace" font-size="22" fill="#00E5FF" opacity="0.9">
+    Full Stack MERN Developer
+  </text>
+
+  <!-- subtitle -->
+  <text x="94" y="272" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#C9CDD3" opacity="0.85">
+    Engineering clean, scalable web experiences from India
+  </text>
+</svg>
