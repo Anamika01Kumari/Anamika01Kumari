@@ -19,7 +19,7 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/-India-000000?style=for-the-badge&logo=googlemaps&logoColor=00E5FF&labelColor=000000" alt="location" />
-  <img src="https://img.shields.io/badge/-anamikakum9%40gmail.com-000000?style=for-the-badge&logo=gmail&logoColor=00E5FF&labelColor=000000" alt="email" />
+  <img src="https://img.shields.io/badge/-anamika.kumari.workmail%40gmail.com-000000?style=for-the-badge&logo=gmail&logoColor=00E5FF&labelColor=000000" alt="email" />
   <img src="https://img.shields.io/badge/-MERN%20Stack-000000?style=for-the-badge&logo=react&logoColor=7C3AED&labelColor=000000" alt="stack" />
 </div>
 
